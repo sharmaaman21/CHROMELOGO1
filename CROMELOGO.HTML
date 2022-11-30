@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STyle>
+        * {
+    margin: 0;
+    padding: 0;
+}
+.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.chrome {
+    width: 210px;
+    height: 210px;
+    border-radius: 50%;
+    z-index: 1;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation: spin 0.8s linear forwards;
+}
+.chrome .circle {
+    border-radius: 50%;
+    background: #0d6cac;
+    background: -webkit-gradient(linear, 50% 0%, 50% 100%, 
+                                color-stop(0%, #91c1e7), 
+                                color-stop(100%, #0d6cac));
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    border: 8px solid #fff;
+    z-index: 10;
+}
+.part-1 {
+    background: #e93c35;
+    position: absolute;
+    top: 0;
+    left: 34px;
+    width: 200px;
+    height: 60px;
+}
+.part-1:after {
+    transform: rotate(60deg);
+    content: " ";
+    background: #e93c35;
+    position: absolute;
+    top: 0;
+    left: -91px;
+    width: 200px;
+    height: 58px;
+}
+.part-2 {
+    transform: rotate(120deg);
+    background: #fdd901;
+    position: absolute;
+    top: 131px;
+    left: 56px;
+    width: 200px;
+    height: 65px;
+}
+.part-2:after {
+    transform: rotate(60deg);
+    content: " ";
+    background: #fdd901;
+    position: absolute;
+    top: 0;
+    left: -91px;
+    width: 200px;
+    height: 58px;
+}
+.part-3 {
+    transform: rotate(-120deg);
+    background: #5bc15b;
+    position: absolute;
+    top: 88px;
+    left: -74px;
+    width: 200px;
+    height: 65px;
+}
+.part-3:after {
+    transform: rotate(60deg);
+    content: " ";
+    background: #5bc15b;
+    position: absolute;
+    top: 0;
+    left: -91px;
+    width: 200px;
+    height: 58px;
+}
+    </STyle>
+</head>
+<body>
+    <div class="icon">
+        <div class="chrome">
+          <div class="part-1"></div>
+          <div class="part-2"></div>
+          <div class="part-3"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+</body>
+</html>
+Footer
